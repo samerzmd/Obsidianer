@@ -13,15 +13,35 @@ A CLI tool to automatically sync files in a directory with a remote Git reposito
 
 ## Installation
 
-1. Ensure you have Go installed on your machine.
-2. Clone this repository.
-3. Navigate to the repository and run `go build` to compile the application.
-4. Optionally, move the compiled executable to a folder in your PATH for easier access.
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/samerzmd/obsidianer.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd obsidianer
+    ```
+
+3. Build the project:
+
+    ```bash
+    go build -o obsidianer ./cmd/
+    ```
+
+This will generate an executable named `obsidianer`.
 
 ## Usage
 
-1. Run the compiled executable.
-2. When prompted, enter the path to the directory you wish to watch.
+Run the executable and follow the prompts.
+
+```bash
+./obsidianer
+```
+You will be asked to specify the path of the directory you want to watch. If the directory is not a Git repository, you'll also be prompted to provide an empty Git repository URL.
+
 
 ## Tests
 
