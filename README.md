@@ -42,6 +42,34 @@ Run the executable and follow the prompts.
 ```
 You will be asked to specify the path of the directory you want to watch. If the directory is not a Git repository, you'll also be prompted to provide an empty Git repository URL.
 
+## Add to PATH (optional)
+
+To make the obsidianer command available globally, add the executable to your PATH.
+
+### For Bash:
+Add the following line to your ~/.bashrc or ~/.bash_profile file:
+
+```bash
+export PATH=$PATH:/path/to/obsidianer/directory
+```
+Then apply the changes:
+```bash 
+source ~/.bashrc  # or source ~/.bash_profile
+```
+### For Zsh:
+Add the following line to your ~/.zshrc file:
+
+```bash
+export PATH=$PATH:/path/to/obsidianer/directory
+```
+Then apply the changes:
+
+```bash
+source ~/.zshrc
+```
+Replace /path/to/obsidianer/directory with the actual directory path where your obsidianer executable resides.
+
+After doing this, you should be able to run obsidianer from any directory in the terminal.
 
 ## Tests
 
